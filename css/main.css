@@ -1,3 +1,43 @@
+.map {
+    display: block;
+    position: relative;
+    z-index: 0;
+}
+
+#one {
+    top: 120pt;
+    left: 120pt;
+}
+
+#two {
+    top: 280pt;
+    left: 120pt;
+}
+
+
+.bedroom {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    }
+    .bedroom:hover::after {
+        content: attr(data-title);
+        display: block;
+        position: absolute;
+        width: 150pt;
+        top: -45%;
+        left: -160%;
+        background: rgb(255, 255, 255);
+        border: 1px solid #680a6b;
+        border-width: 1px 1px 8px 1px;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        font-size: 11px; /* Размер текста подсказки */
+        padding: 15px 30px; /* Поля */
+        z-index: -1;
+    }
+
+
 .photo {
     display: inline-block; /* Строчно-блочный элемент */
     position: relative; /* Относительное позиционирование */
